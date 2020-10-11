@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Feedback Form</title>
+	<font size="4" color="blue" >
+		<h3 style="text-decoration: inherit;">Feedback Form For Hostel Facilities</h3>
+	</font>
+</head>
+<body>
+	<form onsubmit="alert('Submitted')">
+	
+
+		Student Name:
+		<input type="text" name="Student Name"><br>
+		<br><label for="myfile">Students Photo:</label>
+		<input type="file" id="myfile" name="myfile" required><br>
+
+		<br><i> Choose the option as per your ratings:</i><br>
+
+		<fieldset>
+		
+		Cleanliness in hostel buildings:
+		<br><input type="radio" name="Cleanliness">Excellent
+		<br><input type="radio" name="Cleanliness">Very Good
+		<br><input type="radio" name="Cleanliness" checked>Good
+		<br><input type="radio" name="Cleanliness">Bad
+		<br><input type="radio" name="Cleanliness">Very Bad<br>
+
+		<br>Is wi-fi facility available:
+		<br><input type="radio" name="wifi">Yes
+		<br><input type="radio" name="wifi">No <br> 
+
+		<br>Is room-service available:
+		<br><input type="radio" name="room-service">Yes
+		<br><input type="radio" name="room-service">No<br>
+
+		<br>Is security staff strict about rules:
+		<br><input type="radio" name="security">Always
+		<br><input type="radio" name="security">Sometime
+		<br><input type="radio" name="security">Never<br>
+
+		<br>Would you recommend your friends to choose these hostels:
+		<br><input type="radio" name="recommend">Yes
+		<br><input type="radio" name="recommend">May be
+		<br><input type="radio" name="recommend">No<br>
+
+		<br>Overall Ratings:
+		<input type="text" name="Ratings"><br>
+
+		<br>Suggestions:
+		<br><textarea rows="4" cols="30" required></textarea><br>
+
+		<br><input type="reset"  value="Reset">
+		<input type="submit" value="Submit" formaction="/action_page.php">
+
+	</fieldset>
+	</form>
+</body>
